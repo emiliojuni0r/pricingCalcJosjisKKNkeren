@@ -449,7 +449,7 @@ export default function Calculator() {
 
         {/* Workspace Mode: Print Single (Tampil di browser & print single) */}
         <section className={`grid grid-cols-[minmax(0,1.05fr)_minmax(360px,0.72fr)] max-md:grid-cols-1 gap-[22px] items-start print:block ${printMode === 'all' ? 'print:hidden' : ''}`}>
-          <div className="relative px-5 py-5 pt-10 border border-[#d8cdbb] rounded-lg bg-[#fffaf0]/90 shadow-[0_24px_70px_rgba(36,35,31,0.12)] print:hidden">
+          <div className="relative px-5 py-5 pt-10 h-full border border-[#d8cdbb] rounded-lg bg-[#fffaf0]/90 shadow-[0_24px_70px_rgba(36,35,31,0.12)] print:hidden">
             <button
               type="button"
               className="absolute top-4 right-5 inline-flex min-h-[42px] items-center justify-center gap-2 px-3.5 border border-[#1f7a68] rounded-lg text-white bg-[#1f7a68] font-extrabold disabled:opacity-52 disabled:cursor-not-allowed"
@@ -677,6 +677,10 @@ export default function Calculator() {
             </div>
           </aside>
         </section>
+
+        <footer className="w-fit mx-auto p-2 shadow flex bg-[#fffaf0]/90 rounded-full justify-center font-['Georgia','Times_New_Roman',serif] font-light text-xs mt-6">
+          &copy; 2026 Pricing Calc | Version 1.1 | Developed by <a href="https://www.instagram.com/rembaka.bondowoso/" className='ml-1 text-[#808554] hover:underline hover:text-[#aeb388] transform'>KKN Rembaka Bondowoso</a>
+        </footer>
 
         {/* Workspace Mode: Print All (Hanya tampil saat tombol cetak semua ditekan) */}
         <div className={printMode === 'all' ? 'hidden print:block' : 'hidden'}>
