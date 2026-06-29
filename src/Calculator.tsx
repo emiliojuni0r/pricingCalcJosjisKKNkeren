@@ -41,7 +41,6 @@ const defaultCostNames: Record<ProductType, string[]> = {
     'Biaya bahan baku',
     'Biaya bahan pembantu',
     'Biaya overhead',
-    'Biaya dibebankan',
   ],
   trading: ['Harga beli barang'],
 }
